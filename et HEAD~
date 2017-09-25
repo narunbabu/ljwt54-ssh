@@ -1,0 +1,29 @@
+commit da84cf690d4a9cd30e7357e28d71fdb3fd5f64fa
+Author: narunbabu <narun.iitb@gmail.com>
+Date:   Mon Sep 25 04:44:58 2017 -0500
+
+    database config removed
+
+commit e0a0fa7373eadba1118bb8855938c3c9663ce524
+Author: narunbabu <narun.iitb@gmail.com>
+Date:   Mon Sep 25 04:36:51 2017 -0500
+
+    api prefix removed
+
+commit 822e5b7c751fe16a6655a2efb7a4ea831302822b
+Author: Arun Babu N <ab@ameyem.com>
+Date:   Mon Sep 25 10:17:35 2017 +0530
+
+    welcome page change
+
+commit 3b33bee6bc2c3e48d22ea023d4d44b954be417cf
+Author: Arun Babu N <ab@ameyem.com>
+Date:   Sun Sep 24 16:53:16 2017 +0530
+
+    jwt implemented
+
+commit de3a25e48538ede280405d2abf1d3cae622a4d73
+Author: narunbabu <narun.iitb@gmail.com>
+Date:   Sun Sep 24 06:01:25 2017 -0500
+
+    first commit
