@@ -20,10 +20,19 @@ Use App\Article;
 
 Route::post('auth/register', 'UserController@register');
 Route::post('auth/login', 'UserController@login');
+Route::get('districts', 'SthaliController@index');
+Route::get('districts/{dist_code}', 'SthaliController@show');
+
+Route::get('sd/{sub_dist_code}', 'SthaliController@show_vils');
+Route::get('vil/{vil_code}', 'SthaliController@show_village');
 Route::group(['middleware' => 'jwt.auth'], function () {
     Route::get('user', 'UserController@getAuthUser');
     Route::get('articles', 'ArticleController@index');
+    
+
     Route::get('articles/{id}', 'ArticleController@show');
+    
+
     Route::post('articles', 'ArticleController@store');
     Route::put('articles/{id}', 'ArticleController@update');
     Route::delete('articles/{id}', 'ArticleController@delete');
