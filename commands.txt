@@ -87,7 +87,7 @@ cd laraprojects/ljwt
 
 
 for model
- php artisan make:model Article -m
+php artisan make:model Article -m
 php artisan migrate
 php artisan make:seeder ArticlesTableSeeder
 /opt/php70/bin/php artisan make:seeder ArticlesTableSeeder
