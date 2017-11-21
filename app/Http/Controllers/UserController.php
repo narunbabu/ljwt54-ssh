@@ -17,7 +17,9 @@ class UserController extends Controller
    
     public function register(Request $request){
         $user = $this->user->create([
-          'name' => $request->get('name'),
+          'vil_code' => $request->get('vil_code'),
+          'firstName' => $request->get('firstName'),
+          'lastName' => $request->get('lastName'),
           'email' => $request->get('email'),
           'password' => bcrypt($request->get('password'))
         ]);
