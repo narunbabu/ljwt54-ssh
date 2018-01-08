@@ -166,6 +166,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Jrean\UserVerification\UserVerificationServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
@@ -227,6 +228,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'UserVerification' => Jrean\UserVerification\Facades\UserVerification::class,
 
     ],
 

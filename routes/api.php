@@ -27,9 +27,10 @@ Route::get('sds/{dist_code}', 'SthaliController@showsds');
 
 Route::get('vils/{sub_dist_code}', 'SthaliController@show_vils');
 Route::get('vildet/{vil_code}', 'SthaliController@show_village');
-Route::group(['middleware' => 'jwt.auth'], function () {
+Route::group(['middleware' => ['isVerified','jwt.auth']], function () {
     Route::get('user', 'UserController@getAuthUser');
     Route::get('articles', 'ArticleController@index');
+    Route::get('uv', 'UserController@getUV');
     
 
     Route::get('articles/{id}', 'ArticleController@show');

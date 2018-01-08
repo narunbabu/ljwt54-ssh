@@ -17,6 +17,25 @@ return [
     */
 
     'driver' => env('MAIL_DRIVER', 'smtp'),
+    // 'driver' => smtp,
+    // 'host' => smtp.gmail.com,
+    // 'port' => 587,
+    'from' => ['address' => 'info@amyem.com', 'name' => 'Ameyem Verification'],
+    // 'encryption' => tls,
+    // 'username' => test@gmail.com,
+    // 'password' => test123,
+    // 'sendmail' => '/usr/sbin/sendmail -bs',
+    // 'pretend' => false,
+
+    // 'driver' => smtp,
+    // 'host' => smtp.ameyem.com,
+    // 'port' => 25,
+    // 'from' => ['address' => info@ameyem.com, 'name' => 'Test'],
+    // 'encryption' => tls,
+    // 'username' => info@ameyem.com,
+    // 'password' => info@123,
+    // 'sendmail' => '/usr/sbin/sendmail -bs',
+    // 'pretend' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +48,8 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'e36.ehosts.com'),
+    // 'host' => env('MAIL_HOST', 'smtp.gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +62,8 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 25),
+    // 'port' => env('MAIL_PORT', 587),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +77,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'info@ameyem.com'),
+        // 'address' => env('MAIL_FROM_ADDRESS', 'narun.iitb@gmail.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
@@ -71,7 +93,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => env('MAIL_ENCRYPTION'),
 
     /*
     |--------------------------------------------------------------------------
@@ -121,3 +143,10 @@ return [
     ],
 
 ];
+
+// MAIL_DRIVER=smtp
+// MAIL_HOST=smtp.gmail.com
+// MAIL_PORT=587
+// MAIL_USERNAME=narun.iitb@gmail.com
+// MAIL_PASSWORD=
+// MAIL_ENCRYPTION=tls
