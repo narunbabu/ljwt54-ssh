@@ -43,7 +43,7 @@ class SthaliController extends Controller
    {
     //return $request;//  "hello this";
     //  return District::find($dist_code);
-     $vil=DB::select('select `vil_name`,`pin_code`,`tot_geograph_area`,`tot_households`,`gram_pan_name`, from `village_details` where `village_details`.`vil_code` ='.$vil_code.' limit 1');
+     $vil=DB::select('select `vil_name`,`gram_pan_name`,`pin_code`,`tot_geograph_area`,`tot_households`, from `village_details` where `village_details`.`vil_code` ='.$vil_code.' limit 1');
      return $vil;
    }
 
