@@ -1,4 +1,4 @@
-
+﻿
              ://medium.com/laravel-news/the-simple-guide-to-deploy-laravel-5-application-on-shared-hosting-1a8d0aee923e
 composer create-project --prefer-dist laravel/laravel first_blog "5.3.*"
 composer create-project --prefer-dist laravel/laravel fresh "5.3.*"
@@ -127,3 +127,15 @@ This way, we can simply run $ php artisan db:seed
 /opt/php70/bin/php artisan make:middleware Cors
 
 rm public_html/api/.index.php.swp>middleware('api',')
+
+
+curl -sS https://getcomposer.org/installer | /opt/php70/bin/php
+
+curl -sS https://getcomposer.org/installer | /opt/cpanel/ea-php71/root/usr/bin/php
+
+/opt/cpanel/ea-php71/root/usr/bin/php composer.phar require jrean/laravel-user-verification:dev-master
+
+/opt/cpanel/ea-php71/root/usr/bin/php artisan vendor:publish --provider="Jrean\UserVerification\UserVerificationServiceProvider" --tag="config"
+/opt/cpanel/ea-php71/root/usr/bin/php composer.phar clear-cache
+
+/opt/cpanel/ea-php71/root/usr/bin/php artisan migrate --path="/vendor/jrean/laravel-user-verification/src/resources/migrations"
